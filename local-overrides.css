@@ -77,3 +77,17 @@ button,
 a {
   -webkit-tap-highlight-color: transparent;
 }
+
+.blur-text,
+.blur-text *,
+[style*="filter: blur"],
+[style*="filter:blur"] {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+.blur-text *,
+[style*="filter: blur"],
+[style*="filter:blur"] {
+  transform: none !important;
+}
