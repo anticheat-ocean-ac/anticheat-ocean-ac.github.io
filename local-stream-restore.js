@@ -15,6 +15,14 @@
         node.style.transform = "none";
       }
     });
+
+    scope.querySelectorAll('.blur-text, .blur-text *, [style*="filter: blur"], [style*="filter:blur"]').forEach(function (node) {
+      node.style.filter = "none";
+      node.style.opacity = "1";
+      if (node.style.transform) {
+        node.style.transform = "none";
+      }
+    });
   }
 
   function restoreStreamedBlocks() {
